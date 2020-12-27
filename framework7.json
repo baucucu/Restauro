@@ -1,0 +1,26 @@
+{
+  "cwd": "/Users/Alex/Documents/JSProjects/Framework7/Framework7 - ReservationsApp",
+  "type": [
+    "pwa"
+  ],
+  "name": "Restaurant Reservations",
+  "framework": "react",
+  "template": "split-view",
+  "bundler": "webpack",
+  "cssPreProcessor": false,
+  "theming": {
+    "customColor": false,
+    "color": "#007aff",
+    "darkTheme": false,
+    "iconFonts": true,
+    "fillBars": false
+  },
+  "customBuild": false,
+  "webpack": {
+    "developmentSourceMap": true,
+    "productionSourceMap": true,
+    "hashAssets": false,
+    "preserveAssetsPaths": false,
+    "inlineAssets": true
+  }
+}
