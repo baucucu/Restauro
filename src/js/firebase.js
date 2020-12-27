@@ -3,11 +3,11 @@ import { firebase } from '@firebase/app';
 var firebaseConfig = {
     // apiKey: "AIzaSyDDCvqlFnV1ntGZl0OUJ8NrI3IQPzJ-Dj4",
     apiKey: process.env.REACT_APP_FIREBASE_APIKEY,
-    authDomain: "restauro-b8377.firebaseapp.com",
-    projectId: "restauro-b8377",
+    authDomain: process.env.REACT_APP_FIREBASE_DOMAIN,
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
     storageBucket: "restauro-b8377.appspot.com",
     messagingSenderId: "365355681819",
-    appId: "1:365355681819:web:819cfd1a8a9883be0f90be"
+    appId: process.env.REACT_APP_FIREBASE_APP_ID
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
