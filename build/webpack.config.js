@@ -9,6 +9,14 @@ const WorkboxPlugin = require('workbox-webpack-plugin');
 
 const path = require('path');
 
+const { debug } = require('webpack');
+
+require('dotenv').config({ // it puts the content to the "process.env" var. System vars are taking precedence
+    path: '.env.webpack',
+});
+// and this to pass env vars to the JS application
+const DotenvPlugin = require('webpack-dotenv-plugin');
+
 function resolvePath(dir) {
   return path.join(__dirname, '..', dir);
 }
@@ -19,6 +27,7 @@ const target = process.env.TARGET || 'web';
 
 
 module.exports = {
+
   mode: env,
   entry: {
     app: './src/js/app.js',
