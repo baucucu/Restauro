@@ -1,6 +1,6 @@
 import { firebase } from '@firebase/app';
 
-import Vars from '../js/vars.js'
+import Vars from '../../vars.js'
 
 
 var firebaseConfig = {
