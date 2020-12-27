@@ -44,6 +44,7 @@ export default class extends React.Component {
         theme: 'auto', // Automatic theme detection
         on: {
           'init': () => {
+            
             reservationsRef.doc("OT12346").set({
               "@context": "http://schema.org",
               "@type": "FoodEstablishmentReservation",
