@@ -36,6 +36,8 @@ export default () => (
       <Link>Right Link</Link>
     </Toolbar>
     {/* Page content */}
+    <BlockTitle>FIREBASE_APIKEY: {process.env.REACT_APP_FIREBASE_APIKEY}</BlockTitle>
+    <BlockTitle>NODE_ENV: {process.env.NODE_ENV}</BlockTitle>
     <Block strong>
       <p>This is an example of split view application layout, commonly used on tablets. The main approach of such kind of layout is that you can see different views at the same time.</p>
 
