@@ -1,7 +1,8 @@
 import { firebase } from '@firebase/app';
 
 var firebaseConfig = {
-    apiKey: "AIzaSyDDCvqlFnV1ntGZl0OUJ8NrI3IQPzJ-Dj4",
+    // apiKey: "AIzaSyDDCvqlFnV1ntGZl0OUJ8NrI3IQPzJ-Dj4",
+    apiKey: process.env.REACT_APP_FIREBASE_APIKEY,
     authDomain: "restauro-b8377.firebaseapp.com",
     projectId: "restauro-b8377",
     storageBucket: "restauro-b8377.appspot.com",

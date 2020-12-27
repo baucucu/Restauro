@@ -45,10 +45,10 @@ export default class extends React.Component {
         on: {
           'init': () => {
             
-            reservationsRef.doc("OT12346").set({
+            reservationsRef.doc("OT12348").set({
               "@context": "http://schema.org",
               "@type": "FoodEstablishmentReservation",
-              "reservationNumber": "OT12346",
+              "reservationNumber": "OT12348",
               "reservationStatus": "http://schema.org/Confirmed",
               "underName": {
                 "@type": "Person",
