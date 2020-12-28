@@ -169,6 +169,7 @@ module.exports = {
     ],
   },
   plugins: [
+    new webpack.EnvironmentPlugin( { ...process.env } ),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(env),
       'process.env.TARGET': JSON.stringify(target),

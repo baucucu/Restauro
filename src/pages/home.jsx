@@ -17,7 +17,7 @@ import {
   Button
 } from 'framework7-react';
 
-import Vars from '../../vars.js';
+import Vars from '../js/vars.js';
 
 export default () => (
   <Page name="home">

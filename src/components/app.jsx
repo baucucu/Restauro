@@ -49,28 +49,44 @@ export default class extends React.Component {
               "@context": "http://schema.org",
               "@type": "FoodEstablishmentReservation",
               "reservationNumber": "OT12348",
-              "reservationStatus": "http://schema.org/Confirmed",
+              "reservationStatus": "http://schema.org/Confirmed", // Pending || Confirmed || Hold || Cancelled
               "underName": {
                 "@type": "Person",
-                "name": "John Smith"
+                "name": "Alex Raduca",
+                "phone": "+40754832167",
+                "email": "alexandru.raduca@gmail.com"
               },
               "reservationFor": {
                 "@type": "FoodEstablishment",
-                "name": "Wagamama",
+                "name": "Stana lui Aidan",
                 "address": {
                   "@type": "PostalAddress",
-                  "streetAddress": "1 Tavistock Street",
-                  "addressLocality": "London",
-                  "addressRegion": "Greater London",
-                  "postalCode": "WC2E 7PG",
-                  "addressCountry": "United Kingdom"
+                  "streetAddress": "83 Ciurila",
+                  "addressLocality": "Ciurila",
+                  "addressRegion": "Cluj",
+                  "postalCode": "400400",
+                  "addressCountry": "Romania"
                 }
               },
               "startTime": "2027-04-10T08:00:00+00:00",
-              "partySize": "2"
+              "endTime": "2027-04-10T10:00:00+00:00",
+              "partySize": "2",
+              "additionalInfo": {
+                "children": 2,
+                "childrenSeats": 2,
+                "vegetarians": 1,
+                "specialEvents": [
+                  "Birthday"
+                ],
+                "seatingPreferences": "locuri cu vedere la geam",
+                "otherComments": "e posibil sa intarziem 15 minute",
+              },
+              "adminNotes":"",
+              "table":"1B",
+              "order":{}
             })
             .then(function(docRef) {
-              console.log("Document written with ID: ", docRef.id);
+              console.log("Document written with ID: ", docRef && docRef.id);
             })
             .catch(function(error) {
               console.error("Error adding document: ", error);
